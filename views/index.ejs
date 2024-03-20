@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Konnexweb</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="bu">
+	<!-- Open Sans -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://codepen.io/CodeBoomer/pen/PzgWYp.css'>
+	<link rel="stylesheet" href="/public/css/styles.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#scroll-spy">
+
+	<!-- Navigation - Fixed Top -->
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-home" href="#home" role="button">
+					<svg class="lnr lnr-home">
+						<use xlink:href="#lnr-home"></use>
+					</svg>
+				</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scroll-spy"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="material-icons">&#xE5D2;</i>
+				</button>
+				<!-- 				<a class="navbar-brand" href="#home">Boom Scroll
+					<i class="material-icons">mouse</i>
+				</a> -->
+			</div>
+
+			<!-- Collect the nav links, forms for toggling -->
+			<div class="collapse navbar-collapse" id="scroll-spy">
+
+				<!-- navbar-nav -->
+				<ul class="nav navbar-nav ">
+					<li><a href="#about">About</a></li>
+					<li><a href="#demo">Features</a></li>
+					<li><a href="#features">Smart Home</a></li>
+				</ul><!-- /.navbar-nav -->
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav><!-- /.fixed navigation -->
+
+	<section id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>KodeSphere v1</h1>
+					<h4>by Konnexions</h4>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+					<p>Coding Together</p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-xs-12">
+					<a class="tutorials-link" href="https://ksac.kiit.ac.in/societies/konnexions/"
+						role="button">Official Page</a>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</section><!-- /#home -->
+
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="section-header">
+						About
+					</div>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+					<p>
+						We are Team SnackUnderFlow, comprised of two individuals Ayush Srivastava and Eklavya Gupta.
+						With a passion for innovation and
+						a drive to excel.
+
+
+						Together, as Team SnackFlow, we are ready to tackle the challenge presented to us in the
+						hackathon. With our combined skills, innovative thinking, and dedication to excellence, we
+						aim to craft a web interface that not only meets but exceeds expectations. Our goal is to
+						deliver a solution that is not only aesthetically pleasing and intuitive to navigate but
+						also adheres to the best practices of user experience (UX) and user interface (UI) design.
+						We are excited to showcase our talents and make a meaningful contribution to the world of
+						smart home technology.</p>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /#about -->
+
+	<section id="demo">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="section-header">
+						Features
+					</div>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="video-roll--container col-xs-12">
+					<ul class="video-roll">
+						<img src="/public/images/home.jpeg" target="_blank" height="30%" width="50%">
+						<img src="/public/images/home1.jpg" target="_blank" height="30%" width="50%">
+					</ul>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<a class="tutorials-link"
+						href="https://www.youtube.com/watch?v=sYqjs8TKkOE&pp=ygUKc21hcnQgaG9tZQ%3D%3D"
+						role="button">Watch Videos</a>
+					<h4>Check out YouTube tutorials</h4>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+
+	<section id="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="section-header">
+						Smart Home
+					</div>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="unique-container">
+					<div class="unique-card">
+						<div class="unique-box">
+							<div class="unique-content">
+								<h2></h2>
+								<h3>Fan</h3>
+								<img src="/public/images/fan.png" height="50px" width="50px"><br>
+								<form action="/submitfan" method="post">
+									<div class="speed-dropdown">
+
+										<label for="speed">Speed:</label>
+										<select id="speed" name="value">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+									</div>
+									<button type="submit">Submit</button>
+								</form>
+								<div class="current-color-input">
+									<label for="current-color" class="new">Current State:</label>
+									<div class="current-color" id="data">
+										<%= data.fan %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="unique-card">
+						<div class="unique-box">
+							<div class="unique-content">
+								<h2></h2>
+								<h3>Bulb</h3>
+								<img src="/public/images/bulb.png" height="50px" width="50px"><br>
+								<form action="/submitbulb" method="post">
+									<div class="speed-dropdown">
+										<label for="speed">State:</label>
+										<select id="bstate" name="value">
+											<option value="1">On</option>
+											<option value="0">Off</option>
+										</select>
+									</div>
+
+									<button type="submit">Submit</button>
+								</form>
+								<div class="current-color-input">
+									<label for="current-color" class="new">Current State:</label>
+									<div class="current-color" id="data">
+										<%= data.bulb %>hghg
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="unique-card">
+						<div class="unique-box">
+							<div class="unique-content">
+								<h2></h2>
+								<h3>AC</h3>
+								<img src="/public/images/ac.png" height="50px" width="50px"><br>
+								<form action="/submitac" method="post">
+									<div class="speed-dropdown">
+										<label for="state">State:</label>
+										<select id="speed" name="value">
+											<option value="0">On</option>
+											<option value="1">Off</option>
+										</select>
+										<div class="speed-dropdown">
+											<label for="speed">Temperature:</label>
+											<select id="speed" name="speed">
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="23">24</option>
+												<option value="23">25</option>
+												<option value="23">26</option>
+												<option value="23">27</option>
+												<option value="23">28</option>
+												<option value="23">29</option>
+												<option value="23">30</option>
+											</select>
+										</div>
+
+									</div>
+									<button type="submit">Submit</button>
+								</form>
+								<div class="current-color-input">
+									<label for="current-color" class="new">Current Temperature:</label>
+									<div class="current-color" id="data">
+										<%= data.ac.temp %>
+											<%= data.ac.state %>
+
+									</div>
+									<!-- <input type="text" id="current-color" name="current-color" readonly> -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="unique-card">
+						<div class="unique-box">
+							<div class="unique-content">
+								<h2></h2>
+								<h3>LED</h3>
+								<img src="/public/images/led.png" height="50px" width="50px"><br>
+								<form action="/submitled" method="post">
+									<div class="speed-dropdown">
+										<label for="speed">Color:</label>
+										<select id="speed" name="value">
+											<option value="#000000">#000000</option>
+											<option value="#51FF00">#51FF00</option>
+											<option value="#FF8700">#FF8700</option>
+											<option value="#FF0000">#FF0000 </option>
+											<option value="#0042FF">#0042FF</option>
+											<option value="#00F3FF">#00F3FF</option>
+										</select>
+									</div>
+
+									<button type="submit">Submit</button>
+								</form>
+								<div class="current-color-input">
+									<label for="current-color" class="new">Current Color:</label>
+									<div class="current-color" id="data">
+										<%= data.led %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div><!-- /.row -->
+		</div><!-- /.container --><br><br><br><br><br><br><br>
+
+	</section><!-- /#features -->
+
+	<footer class="footer">
+		<div class="waves">
+			<div class="wave" id="wave1"></div>
+			<div class="wave" id="wave2"></div>
+			<div class="wave" id="wave3"></div>
+			<div class="wave" id="wave4"></div>
+		</div>
+		<ul class="social-icon">
+			<li class="social-icon__item"><a class="social-icon__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</a></li>
+			<li class="social-icon__item"><a class="social-icon__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">
+					<ion-icon name="logo-twitter"></ion-icon>
+				</a></li>
+			<li class="social-icon__item"><a class="social-icon__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a></li>
+			<li class="social-icon__item"><a class="social-icon__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a></li>
+		</ul>
+		<ul class="menu">
+			<li class="menu__item"><a class="menu__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">Home</a></li>
+			<li class="menu__item"><a class="menu__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">About</a></li>
+			<li class="menu__item"><a class="menu__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">Services</a></li>
+			<li class="menu__item"><a class="menu__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">Team</a></li>
+			<li class="menu__item"><a class="menu__link"
+					href="https://www.linkedin.com/in/eklavya-gupta-05994829b">Contact</a></li>
+
+		</ul>
+		<p>&copy;2024 SnackUnderFlow | All Rights Reserved</p>
+	</footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
